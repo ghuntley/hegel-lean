@@ -19,6 +19,10 @@ lean_exe nativeIntegrationTests where
   root := `NativeMain
   srcDir := "Tests"
 
+lean_exe hegelExample where
+  root := `Basic
+  srcDir := "Examples"
+
 extern_lib hegel_ffi pkg := do
   let source ← inputTextFile <| pkg.dir / "ffi" / "hegel_lean.c"
   let object ← buildO (pkg.buildDir / "ir" / "hegel_lean.o") source

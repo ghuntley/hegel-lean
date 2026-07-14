@@ -29,6 +29,13 @@ def main : IO Unit := do
   IO.println (reprStr result)
 ```
 
+A runnable example intentionally tests a broken sorting function and prints the
+minimal counterexample:
+
+```sh
+lake exe hegelExample upstream/hegel-rust/target/release/libhegel_c.so
+```
+
 The native loader expects a released or locally built `libhegel` shared library.
 Build one from the reference checkout with:
 
