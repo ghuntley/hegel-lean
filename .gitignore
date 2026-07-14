@@ -1,0 +1,17 @@
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+
+# Lean/Lake build products
+.lake/
+.hegel/
+
+# Upstream implementations are local compatibility references, not vendored.
+upstream/
